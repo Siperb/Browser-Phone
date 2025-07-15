@@ -4788,7 +4788,7 @@ function ReceiveNotify(notification, selfSubscribe) {
     var Presence = "Unknown";
 
     var ContentType = "";
-    if(notification.request.headers.length > 0 && notification.request.headers["Content-Type"] && notification.request.headers["Content-Type"][0]){
+    if(Object.keys(notification.request.headers).length > 0 && notification.request.headers["Content-Type"] && notification.request.headers["Content-Type"][0]){
         ContentType = notification.request.headers["Content-Type"][0].parsed;
     }
     if (ContentType == "application/pidf+xml") {
