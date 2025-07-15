@@ -52,3 +52,8 @@ Utilize your existing PBX to seamlessly integrate with the advanced [WebRTC](htt
 - croppie-2.6.4                 : For Croppie
 
 > Note: These files will load automatically from CDN.
+
+## Testing
+```
+cd Phone && python3 -m http.server 9000
+```
